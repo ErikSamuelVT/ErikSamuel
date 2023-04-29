@@ -3,8 +3,7 @@ import Navbar from './Components/Navbar';
 import Header from './Components/Header';
 import Aboutme from './Components/Aboutme';
 import Skills from './Components/Skills';
-import Projects from './Components/Projects';
-import Contact from './Components/Contact';
+import Portfolio from './Components/Portfolio';
 function App() {
   return (
     <>
@@ -12,8 +11,7 @@ function App() {
     <Header/>
     <Aboutme/>
     <Skills/>
-    <Projects/>
-    <Contact/>
+    <Portfolio/>
     </>
   );
 }

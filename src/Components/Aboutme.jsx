@@ -1,35 +1,23 @@
-import React, { useEffect } from "react";
-import sr from "../assets/js/Scrollreveal.js";
+import Logo from '../assets/images/aboutme.svg'
+
 function Aboutme() {
-  const configReveal = {
-    duration: 3500,
-    origin: "bottom",
-    distance: "100px",
-  };
-  useEffect(() => {
-    sr.reveal(".text", configReveal);
-  });
   return (
-    <div className="text container-fluid bg-dark my-sm-custom">
-      <div className="container text-white">
-        <div className="text-center text-white">
-          <h1>Sobre mi</h1>
-          <div className="d-flex justify-content-center">
-            <hr className="mt-0 mb-5 w-25 bg-white" />
-          </div>
+    <div className="container-fluid d-flex align-items-center justify-content-center bg-app-2 vh-100">
+      <div className="container p-0 d-flex">
+        <div className="d-flex flex-column align-items-center justify-content-center w-50 ">
+          <h3 className="badge rounded-pill bg-app-1 fs-1 fw-600 text-center my-5 shadow">Sobre mi</h3>
+          <p className="fc fs-3 fw-400 text-justify">
+            Hola, me llamo Erik Samuel Villarreal Tovar, soy ingeniero en sistemas computacionales con experencia en proyectos de companias y propios. Me gusta seguir aprendiendo tecnologías para seguir reforzando mis conocimientos y darle vida a las ideas con código.
+          </p>
         </div>
-        <p className="text-justify">
-          Me presento, me llamo Erik Samuel Villarreal Tovar, soy ingeniero en
-          sistemas computacionales, apasionado de la informática en general pero
-          más enfocado en el mundo del desarrollo web, para seguir aprendiendo
-          tengo proyectos personales para mantenerme al día y seguir obteniendo
-          el conocimiento de nuevas tecnologías tanto del front-end como del
-          back-end principalmente, sin embargo también me gusta aprender nuevos
-          lenguajes de programación, frameworks, librerías, etc.
-        </p>
+        <div className="d-flex align-items-center justify-content-center w-50">
+          <img src={Logo} className="img-fluid" alt="Sobre mi" title="Sobre mi" />
+        </div>
       </div>
     </div>
   );
 }
 
 export default Aboutme;
+
+/*  */
