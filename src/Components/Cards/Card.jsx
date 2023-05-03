@@ -1,6 +1,6 @@
-function Card({ img, title, alt, tags, link }) {
+function Card({ img, title, alt, link }) {
     return (
-        <div className="card shadow mx-2 mb-3" style={{ width: "18rem", height: '20em' }}>
+        <div className="card shadow mx-2 mb-3" style={{ width: "18rem", height: '20rem' }}>
             <img src={img} className="card-img-top" width={300} height={200} alt={alt} title={alt} />
             <div className="card-body">
                 <h5 className="card-title text-dark text-center mb-4">{title.toUpperCase()}</h5>

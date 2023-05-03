@@ -23,6 +23,10 @@ body {
     font-weight: 300;
 }
 
+.fw-400{
+    font-weight: 400;
+}
+
 .fw-600 {
     font-weight: 600;
 }
@@ -51,7 +55,17 @@ body {
 .icon:hover{
     transform: scale(1.1);
 }
+.fs-custom-1{
+    font-size: calc(2.5rem + 1.5vw)!important;
+}
 
+.test{
+    border: 1px solid red;
+}
+
+.test-2{
+    border: 1px solid purple;
+}
 .emoji {
     animation-name: moviendrew;
     animation-duration: 0.7s;
